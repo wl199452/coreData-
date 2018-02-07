@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGt-zx-e4S">
+                                <rect key="frame" x="20" y="100" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IHx-Oj-xds"/>
+                                    <constraint firstAttribute="width" constant="50" id="UdU-wY-KkE"/>
+                                </constraints>
+                                <state key="normal" title="增"/>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CVV-VA-ER5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V66-OA-4UL">
+                                <rect key="frame" x="108" y="100" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="删"/>
+                                <connections>
+                                    <action selector="delete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AEX-ja-4fs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-gQ-CQn">
+                                <rect key="frame" x="210" y="100" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="查"/>
+                                <connections>
+                                    <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nvz-Vi-qJ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPF-mb-lE5">
+                                <rect key="frame" x="310" y="100" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="改"/>
+                                <connections>
+                                    <action selector="update:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WkA-oD-BUO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ply-gQ-CQn" firstAttribute="centerY" secondItem="V66-OA-4UL" secondAttribute="centerY" id="2bi-Ww-iai"/>
+                            <constraint firstItem="Ply-gQ-CQn" firstAttribute="width" secondItem="V66-OA-4UL" secondAttribute="width" id="6Ow-R0-BT1"/>
+                            <constraint firstItem="Ply-gQ-CQn" firstAttribute="leading" secondItem="V66-OA-4UL" secondAttribute="trailing" constant="52" id="9sl-O1-Xo3"/>
+                            <constraint firstItem="V66-OA-4UL" firstAttribute="leading" secondItem="IGt-zx-e4S" secondAttribute="trailing" constant="38" id="Cgj-Us-xsT"/>
+                            <constraint firstItem="zPF-mb-lE5" firstAttribute="centerY" secondItem="Ply-gQ-CQn" secondAttribute="centerY" id="LCE-Zm-Jdk"/>
+                            <constraint firstItem="Ply-gQ-CQn" firstAttribute="height" secondItem="V66-OA-4UL" secondAttribute="height" id="NGl-nk-hFd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IGt-zx-e4S" secondAttribute="bottom" constant="517" id="RCL-My-cG8"/>
+                            <constraint firstItem="V66-OA-4UL" firstAttribute="centerY" secondItem="IGt-zx-e4S" secondAttribute="centerY" id="dK2-et-6aw"/>
+                            <constraint firstItem="zPF-mb-lE5" firstAttribute="width" secondItem="Ply-gQ-CQn" secondAttribute="width" id="eFU-J2-D4h"/>
+                            <constraint firstItem="V66-OA-4UL" firstAttribute="width" secondItem="IGt-zx-e4S" secondAttribute="width" id="f9a-CP-f3Z"/>
+                            <constraint firstItem="zPF-mb-lE5" firstAttribute="height" secondItem="Ply-gQ-CQn" secondAttribute="height" id="gOO-wN-KGG"/>
+                            <constraint firstItem="V66-OA-4UL" firstAttribute="height" secondItem="IGt-zx-e4S" secondAttribute="height" id="iLu-tM-I6F"/>
+                            <constraint firstItem="zPF-mb-lE5" firstAttribute="leading" secondItem="Ply-gQ-CQn" secondAttribute="trailing" constant="50" id="oyo-FS-iV0"/>
+                            <constraint firstItem="IGt-zx-e4S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wKX-or-M5E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
